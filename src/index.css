@@ -249,4 +249,7 @@
   .skills {
     flex-direction: column;
   }
+  .hero-stroke {
+    display: none;
+  }
 }

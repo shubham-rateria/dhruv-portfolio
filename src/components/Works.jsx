@@ -11,10 +11,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-    >
+    <motion.div className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
       <div
         options={{
           max: 45,
@@ -49,7 +46,7 @@ const ProjectCard = ({
       className="cursor-pointer"
       onClick={() => window.open(source_code_link, "_blank")}
     >
-      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      <motion.div>
         <Tilt
           options={{
             max: 45,
@@ -105,16 +102,13 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
       <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
+        <motion.p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
           links to code repositories and live demos in it. It reflects my
@@ -128,9 +122,11 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-      <div style={{
-        margin: "5rem 0 2rem 0"
-      }}>
+      <div
+        style={{
+          margin: "5rem 0 2rem 0",
+        }}
+      >
         <br />
         <h2 className={`${styles.sectionHeadText}`}>
           Roles I am looking out for:
