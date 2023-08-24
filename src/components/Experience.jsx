@@ -84,12 +84,12 @@ const Experience = () => {
   return (
     <motion.section
       className="experience-container"
-      variants={staggerContainer()}
+      variants={window.innerWidth > 600 ? staggerContainer() : ""}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
     >
-      <motion.div variants={textVariant()}>
+      <motion.div variants={window.innerWidth > 600 ? textVariant() : ""}>
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
         </p>
