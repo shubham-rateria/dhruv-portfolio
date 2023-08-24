@@ -9,7 +9,8 @@ const Hero = () => {
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
         style={{
-          marginTop: "20vh",
+          display: "flex",
+          alignItems: "center"
         }}
       >
         <div className="flex flex-col justify-center items-center mt-5">
@@ -21,17 +22,8 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">Dhruv</span>
           </h1>
-          {/* <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a Computer Science Engineer !
-          </p> */}
           <p
-            style={{
-              maxWidth: "40vw",
-              marginTop: "1rem",
-              fontSize: "1.2rem",
-              fontWeight: "200",
-            }}
-            className="about-me"
+            className="hero-description about-me"
           >
             I'm a skilled software engineer with proficiency in programming
             languages like

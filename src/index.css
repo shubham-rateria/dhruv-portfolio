@@ -206,3 +206,47 @@
 .about-me i {
   margin: 0 0.2rem 0 0.5rem;
 }
+
+.hero-description {
+  max-width: 40vw;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.experience-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.experience-card-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.experience-card {
+  background: #1d1836;
+  color: #fff;
+  padding: 1.5rem;
+  width: 20vw;
+}
+
+@media (max-width: 600px) {
+  /* Your styles for extra small devices here */
+  .experience-card-container {
+    flex-direction: column;
+  }
+  .experience-card {
+    width: 90vw;
+  }
+  .hero-description {
+    max-width: 90vw;
+  }
+  .skills {
+    flex-direction: column;
+  }
+}
