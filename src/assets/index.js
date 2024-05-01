@@ -49,6 +49,8 @@ import tesla from "./company/tesla.png";
 import penningdownsuccess from "./company/penningdownsuccess.jpg";
 import ginesys from "./company/ginesys.jpg";
 import coldpress from "./company/coldpress.jpg";
+import futrstudios from "./company/futrstudios.jpg";
+import simplilearn from "./company/simplilearn.png";
 import ganesham from "./company/ganesham.jpg";
 
 import carrent from "./carrent.png";
@@ -108,6 +110,8 @@ export {
   mobilebanking,
   aichatbot,
   coldpress,
+  futrstudios,
+  simplilearn,
   ginesys,
   penningdownsuccess,
   ganesham

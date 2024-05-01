@@ -49,7 +49,8 @@ const About = () => {
       >
         I'm a skilled software engineer with proficiency in 
         programming languages like <b>Python</b>, <b>C++</b> and <b>SQL</b>. With <b>Data Science</b> as my strength, 
-        my interests lie in <b>Python</b> & <b>Machine Learning</b>. I'm learning the skills required to develop 
+        my interests lie in <b>Python</b> & <b>Machine Learning</b>. 
+        I'm learning the skills required to develop 
         <b> AI systems</b> in the green energy & healthcare sector. I'm a quick learner and 
         collaborate with people. I can create efficient, scalable, and user-friendly 
         solutions that solve real-world problems.

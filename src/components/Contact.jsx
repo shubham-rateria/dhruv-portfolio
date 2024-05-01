@@ -51,7 +51,7 @@ const Contact = () => {
     formData.set("email", form.email);
     formData.set("message", form.message);
 
-    const res = await fetch("https://usebasin.com/f/4cc55c4e1cf4", {
+    const res = await fetch("https://usebasin.com/f/40f7c0f4dc18", {
       method: "POST",
       body: formData
     })
@@ -107,7 +107,7 @@ const Contact = () => {
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <h3 className={styles.sectionHeadText}>Contact</h3>
 
         <form
           ref={formRef}
@@ -157,25 +157,21 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-        <div className="grid grid-cols-4 gap-2 mt-10 w-40">
-        <a href="https://www.linkedin.com/in/dhruvladia/"
-        className="youtube social" target="_blank">
-        <FontAwesomeIcon icon={faLinkedin} size="2x" />
-      </a>
-      <a href="https://www.github.com/dhruvladia/"
-        className="facebook social" target="_blank">
-        <FontAwesomeIcon icon={faGithub} size="2x" />
-      </a>
-      <button className="button">
+        {/* <div className="grid grid-cols-4 gap-2 mt-10 w-40">
+          <a href="https://www.linkedin.com/in/dhruvladia/"
+          className="youtube social" target="_blank">
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          </a>
+          <a href="https://www.github.com/dhruvladia/"
+            className="facebook social" target="_blank">
+            <FontAwesomeIcon icon={faGithub} size="2x" />
+          </a>
+          <button className="button">
           <a className="button" href="src\assets\dhruv_kant_ladia_cv_1.pdf" download = "DhruvKantLadia_CV.pdf">
             Resume
           </a>
-      </button>
-      {/* <a href="https://www.github.com/dhruvladia/"
-        className="facebook social">
-        <FontAwesomeIcon icon={faEnvelope} size="2x" />
-      </a> */}
-      </div>
+          </button>
+        </div> */}
       </motion.div>
 
       <motion.div

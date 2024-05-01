@@ -90,15 +90,20 @@ const Experience = () => {
       viewport={{ once: true, amount: 0.25 }}
     >
       <motion.div variants={window.innerWidth > 600 ? textVariant() : ""}>
-        <p className={`${styles.sectionSubText} text-center`}>
+        {/* <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
-        </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience.
+        </p> */}
+        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center">
+          Experience
         </h2>
       </motion.div>
       <div className="experience-card-container gap-5 mt-10">
-        {experiences.map((experience, index) => (
+        {experiences.slice(0, 3).map((experience, index) => (
+          <ExperienceCard key={`experience-${index}`} experience={experience} />
+        ))}
+      </div>
+      <div className="experience-card-container gap-5 mt-10">
+        {experiences.slice(3, 6).map((experience, index) => (
           <ExperienceCard key={`experience-${index}`} experience={experience} />
         ))}
       </div>

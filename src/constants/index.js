@@ -46,7 +46,9 @@ import {
   penningdownsuccess,
   ginesys,
   coldpress,
-  ganesham
+  ganesham,
+  futrstudios,
+  simplilearn
 } from "../assets";
 
 export const navLinks = [
@@ -70,10 +72,10 @@ export const navLinks = [
 ];
 
 const services = [
-  {
-    title: "Software Engineer",
-    icon: web,
-  },
+  // {
+  //   title: "Software Engineer",
+  //   icon: web,
+  // },
   {
     title: "Data Scientist",
     icon: mobile,
@@ -83,7 +85,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Tech Product Manager",
+    title: "Founder's Office",
     icon: creator,
   },
 ];
@@ -164,49 +166,68 @@ const technologies = [
 ];
 
 const experiences = [
-  
   {
-    title: "Developer Relations Intern",
+    title: "Product Associate",
+    company_name: "Simplilearn",
+    icon: simplilearn,
+    iconBg: "#383E56",
+    date: "Present",
+    // date: "Jan 2024 - Present",
+    points: [
+     "Led the development of 3 high-impact products by conducting in-depth research, emphasizing the integration of VAEs, GANs, LLM application building, and AI PDLC, increasing the revenue per product by 10%",
+     "Facilitated internal and external collaboration to align product vision for integrating automated conversation agent for the website and LMS, ensuring a seamless user and learner experience resulting in 15% lesser customer support traffic",    
+    ],
+  },  
+  {
+    title: "Machine Learning Engineer",
+    company_name: "Futr Studios",
+    icon: futrstudios,
+    iconBg: "#383E56",
+    // date: "Sept 2023 - Dec 2023",
+    points: [
+     "Researched and developed a context-based chat system using conversational buffer memory with Llama2 & Mistral Orca and deployed it for India's first virtual influencer with over 55,000 followers", 
+    ],
+  },  
+  {
+    title: "Researcher & Technical Content Writer",
     company_name: "ColdPress.AI",
     icon: coldpress,
     iconBg: "#383E56",
-    date: "August 2023 - Present",
+    // date: "August 2023 - Sept 2023",
     points: [
       "Synthesizing a marketing approach to create awareness of the company’s creative dataset services",
       "Researching the targeted community and commencing engagement in the related domains",      
     ],
   },
   {
-    title: "Product Manager Intern",
-    company_name: "Ginesys One",
+    title: "Integration-Traineeship",
+    company_name: "Ginesys",
     icon: ginesys,
     iconBg: "#E6DEDD",
-    date: "June 2023 - July 2023",
+    // date: "June 2023 - July 2023",
     points: [
-      "Drafted SRS document to aid addition of a new function & developed use cases and test cases for the module.",
-      "Collaborated with cross-functional teams. ",
-      "Flowcharts and document creation for business product along with user product analysis.",
+      "Enhanced ERP module usability and performance by documenting functionality, designing test cases, UML diagrams, and flowcharts reducing common failures by 18% and streamlined cross-team communication with SRS document for new sub-module integration",
     ],
   },
   {
-    title: "Data Analyst Intern",
+    title: "Data Analyst",
     company_name: "Ganesham Securities Pvt Ltd",
     icon: ganesham,
     iconBg: "#383E56",
-    date: "March 2023 - May 2023",
+    // date: "March 2023 - May 2023",
     points: [
-      "Applied various techniques to analyse & interpret large-scale financial data from multiple sources",
-      "Improved client satisfaction by 7% & reduced operational costs by 2%.",
+      "Applied ML algorithms (e.g. regression, time series forecasting) to create analytics and predictive models to inform profitable trading decisions",
+      "Organized financial data (stock performance, trading volumes, news sentiment) for research and decision-making. ",
     ],
   },
   {
-    title: "Project Manager & Co-Founder",
+    title: "Chief Product Officer & Co-Founder",
     company_name: "Penning Down Success",
     icon: penningdownsuccess,
     iconBg: "#383E56",
-    date: "April 2020 - Feb 2021",
+    // date: "April 2020 - Feb 2021",
     points: [
-      "Initiated contact with 15+ emerging artists to conduct interviews and showcase their stories, causing a 40% increase in viewership.",
+      "Developed partnerships with 12 emerging artists through targeted outreach, expanding the podcast's reach and demonstrating content acquisition abilities",
       "20% growth in follower engagement within 4 months by implementing a marketing strategy.",
     ],
   },
@@ -268,7 +289,7 @@ const projects = [
   {
     name: "Emotion-Based Movie Recommendation System",
     description:
-      "A Python-based Movie recommender system that launches the camera to capture the facial expression of the user to determine their emotion and recommends movie according to their mood.",
+      "Movie recommender system that uses camera to capture facial expression and recommends movie as per user's mood.",
       tags: [
       {
         name: "python",
